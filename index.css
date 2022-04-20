@@ -56,6 +56,7 @@ nav ul li a:hover {
 }
 
 .labels {
+    font-weight: 100;
 	font-size: xx-large;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	width: 80%;
