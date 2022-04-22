@@ -1,8 +1,8 @@
 <?php
 // database connection code
-$servername = "35.240.136.151";
+$servername = "localhost";
 $username = "root";
-$password = "root";
+$password = "";
 $dbname = "LibraryDB";
 
 // Create connection
