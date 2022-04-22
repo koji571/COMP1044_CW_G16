@@ -19,13 +19,13 @@
             <h1 class="logo">The Library System</h1>
             <ul>
               <li><a href="addBooks.php">AddBooks</a></li>
-              <li><a href="SearchBooks.html">SearchBooks</a></li>
-              <li><a href="members.html">AddMembers</a></li>
-              <li><a href="SearchMembers.html">SearchMembers</a></li>
-              <li><a href="BorrowingDetails.html">Borrowing Details</a></li>
-              <li><a href="DeleteBooks.html">DeleteBooks</a></li>
-              <li><a href="DeleteMembers.html">DeleteMembers</a></li>
-              <li><a href="UpdateMembers.html">UpdateMembers</a></li>
+              <li><a href="SearchBooks.php">SearchBooks</a></li>
+              <li><a href="members.php">AddMembers</a></li>
+              <li><a href="SearchMembers.php">SearchMembers</a></li>
+              <li><a href="BorrowingDetails.php">Borrowing Details</a></li>
+              <li><a href="DeleteBooks.php">DeleteBooks</a></li>
+              <li><a href="DeleteMembers.php">DeleteMembers</a></li>
+              <li><a href="UpdateMembers.php">UpdateMembers</a></li>
 
             </ul>
         </nav>
