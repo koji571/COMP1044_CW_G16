@@ -1,5 +1,18 @@
 <?php
 // database connection code
+$servername = "35.240.136.151";
+$username = "root";
+$password = "root";
+$dbname = "LibraryDB";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+
 if(isset($_POST['txtBook']))
 {
 // $con = mysqli_connect('localhost', 'database_user', 'database_password','database');
