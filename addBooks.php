@@ -53,6 +53,10 @@ body {
       <input type="text" class="form-control" name="txtBook" id="txtBook" placeholder="Name" value="" required>
     </p>
     <p>
+      <label for="category_id">Category (1 to 9)</label>
+      <input type="number" class="form-control"  name="txtcat" id="txtcat"  placeholder="Category Number" min="1" max="9" value="" required>
+    </p>
+    <p>
       <label for="Author Name">Author Name</label>
       <input type="text"  class="form-control"  name="txtAuthor" id="txtAuthor" placeholder="Name" value="" required>
     </p>
@@ -74,8 +78,20 @@ body {
     </p>
 	<p>
       <label for="Date">Date of adding Book to DataBase</label>
-      <input type="date" class="form-control"  name="txtDate" id="txtDate"  placeholder="Datetime" required>
+      <input type="datetime-local" class="form-control"  name="txtDate" id="txtDate"  placeholder="Datetime" required>
     </p>
+  <form>
+    Select Status of Book:<br>
+    <input type="radio" name="status" id="New" value="New" required>
+    <label for="New">New</label><br>
+    <input type="radio" name="status" id="Old" value="Old">
+    <label for="Old">Old</label><br>
+    <input type="radio" name="status" id="Damaged" value="Damaged">
+    <label for="Damaged">Damaged</label><br>
+    <input type="radio" name="status" id="Archive" value="Archive">
+    <label type="Archive">Archive</label>
+  
+
     <p>&nbsp;</p>
     <p>
       <input type="submit" name="Submit" id="Submit" value="Click To Add Book Into DataBase"  class="btn btn-primary btn-lg btn-block">
