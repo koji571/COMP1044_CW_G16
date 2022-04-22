@@ -26,7 +26,7 @@ body {
         <nav>
             <h1 class="logo">The Libary System</h1>
             <ul>
-              <li><a href="Library.html">Home</a></li>
+              <li><a href="Library.php">Home</a></li>
               <li><a href="SearchBooks.html">SearchBooks</a></li>
               <li><a href="members.html">AddMembers</a></li>
               <li><a href="SearchMembers.html">SearchMembers</a></li>
@@ -47,7 +47,7 @@ body {
       </div>
 <fieldset>
   
-  <form name="frmContact" class="needs-validation " method="post" action="libary.php">
+  <form name="frmContact" class="needs-validation " method="post" action="inAddBooks.php">
     <p>
       <label for="Book Title">Book Title</label>
       <input type="text" class="form-control" name="txtBook" id="txtBook" placeholder="Name" value="" required>
@@ -86,4 +86,5 @@ body {
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
+
 </html>

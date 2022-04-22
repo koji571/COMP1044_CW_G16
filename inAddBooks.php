@@ -13,10 +13,7 @@ if ($conn->connect_error) {
 } 
 
 
-if(isset($_POST['txtBook']))
-{
-// $con = mysqli_connect('localhost', 'database_user', 'database_password','database');
-$con = mysqli_connect('localhost', 'root', '','library');
+$conn =new mysqli($servername, $username,$password,$dbname);
 
 // get the post records
 
@@ -29,18 +26,17 @@ $txtCpr = $_POST['txtCpr'];
 $txtDate = $_POST['txtDate'];
 
 // database insert SQL code
-$sql = "INSERT INTO `tbl_contact` (`book_id`, ``book_title`, `category_id`, `author`, `book_copies`,book_pub`, `publisher_name`, `isbn`, `copyright`, `date_added`, `status`) VALUES ('0', '$txtBook', '0', '$txtAuthor', '0', '$txtBp', '$txtPub', '$txtMessage', '$txtIsbn', '$txtCpr', '$txtDate', '0')";
+$sql = "INSERT INTO `book` (`book_id`, ``book_title`, `category_id`, `author`, `book_copies`,book_pub`, `publisher_name`, `isbn`, `copyright`, `date_added`, `status`) VALUES ('0', '$txtBook', '0', '$txtAuthor', '0', '$txtBp', '$txtPub', '$txtMessage', '$txtIsbn', '$txtCpr', '$txtDate', '0')";
 
 // insert in database 
-$rs = mysqli_query($con, $sql);
-if($rs)
+
+if(mysqli_query($conn, $sql))
 {
 	echo "Book Details Inserted";
 }
-}
 else
 {
-	echo "Are you a genuine visitor?";
+	echo "Failed to insert books" . mysqli_error($conn);
 	
 }
 ?>
