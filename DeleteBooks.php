@@ -28,7 +28,7 @@
                 <li><a href="UpdateMembers.php">UpdateMembers</a></li>
             </ul>
         </nav>
-		
+	&nbsp;	
 	</section>
 
     &nbsp;

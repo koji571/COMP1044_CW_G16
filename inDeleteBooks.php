@@ -20,7 +20,7 @@ $conn =new mysqli($servername, $username,$password,$dbname);
 $txtBook = $_POST['txtBook'];
 
 // database insert SQL code
-$sql = "DELETE FROM book (WHERE `book_title`) VALUES ('$txtBook')";
+$sql = "DELETE FROM book (WHERE 'book_title' LIKE `book_title`) VALUES ('$txtBook')";
 
 // delte in database 
 
