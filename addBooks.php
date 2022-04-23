@@ -53,8 +53,18 @@ body {
       <input type="text" class="form-control" name="txtBook" id="txtBook" placeholder="Name" value="" required>
     </p>
     <p>
-      <label for="category_id">Category (1 to 9)</label>
-      <input type="number" class="form-control"  name="txtcat" id="txtcat"  placeholder="Category Number" min="1" max="9" value="" required>
+      <label for="txtcat">Category of Book:</label>
+		<select name="txtcat" id="txtcat">
+			<option value="Periodical">Periodical</option>
+			<option value="English">English</option>
+      <option value="Math">Math</option>
+      <option value="Science">Science</option>
+      <option value="Encyclopedia">Encyclopedia</option>
+      <option value="Filipiniana">Filipiniana</option>
+      <option value="Newspaper">Newspaper</option>
+      <option value="General">General</option>
+      <option value="References">References</option>
+		</select>
     </p>
     <p>
       <label for="Author Name">Author Name</label>
@@ -86,8 +96,8 @@ body {
     <label for="New">New</label><br>
     <input type="radio" name="status" id="Old" value="Old">
     <label for="Old">Old</label><br>
-    <input type="radio" name="status" id="Damaged" value="Damaged">
-    <label for="Damaged">Damaged</label><br>
+    <input type="radio" name="status" id="Damage" value="Damage">
+    <label for="Damage">Damage</label><br>
     <input type="radio" name="status" id="Archive" value="Archive">
     <label type="Archive">Archive</label>
   
