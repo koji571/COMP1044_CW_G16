@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 22, 2022 at 09:58 AM
+-- Generation Time: Apr 23, 2022 at 12:47 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `library`
+-- Database: `LibraryDB`
 --
 CREATE DATABASE IF NOT EXISTS LibraryDB DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE LibraryDB;
@@ -153,7 +153,7 @@ CREATE TABLE `member` (
   `contact` varchar(255) DEFAULT NULL,
   `type` int(12) NOT NULL,
   `year_level` enum('First Year','Second Year','Third Year','Fourth Year','Faculty') NOT NULL,
-  `Status` enum('Active','Banned') NOT NULL
+  `Status` enum('Active','Banned') NOT NULL DEFAULT 'Active'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
