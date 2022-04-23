@@ -30,6 +30,27 @@
         </nav>
 		
 	</section>
+
+    <form action = "members.php" method="get">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <center> 
+
+            <div class="container">
+            <h2 class="lead"><i>Enter the member name of the library to be searched : </i></h2>
+            </div>
+        
+        <input type="text" name="search" size="128" placeholder= "Search Books" required>
+        <br></br>
+        <p>
+        <input type="submit" name="Submit" id="Submit" value="Click To Search Members in DataBase"  class="btn btn-primary btn-lg btn-block">
+        </p>
+        </center>
+        <br>
+        </form>
         
 </body>
 
