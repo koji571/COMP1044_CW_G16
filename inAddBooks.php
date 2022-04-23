@@ -18,7 +18,7 @@ $conn =new mysqli($servername, $username,$password,$dbname);
 // get the post records
 
 $txtBook = $_POST['txtBook'];
-$txtcat = $_POST['txtcat'];
+$cat = $_POST['txtcat'];
 $txtAuthor = $_POST['txtAuthor'];
 $txtBp = $_POST['txtBp'];
 $txtPub = $_POST['txtPub'];
@@ -27,8 +27,29 @@ $txtCpr = $_POST['txtCpr'];
 $txtDate = $_POST['txtDate'];
 $txtStat = $_POST['status'];
 
+//Convert it to int to store in database
+if ($cat==="Periodical"){
+    $txtcat=1;
+} elseif ($cat==="English"){
+    $txtcat=2;
+} elseif ($cat==="Math"){
+    $txtcat=3;
+} elseif ($cat==="Science"){
+    $txtcat=4;
+} elseif ($cat==="Encyclopedia"){
+    $txtcat=5;
+} elseif ($cat==="Filipiniana"){
+    $txtcat=6;
+} elseif ($cat==="Newspaper"){
+    $txtcat=7;
+} elseif ($cat==="General"){
+    $txtcat=8;
+} elseif ($cat==="References"){
+    $txtcat=9;
+}
+
 // database insert SQL code
-$sql = "INSERT INTO book (`book_id`, `book_title`, `category_id`, `author`, `book_copies`,`book_pub`, `publisher_name`, `isbn`, `copyright`, `date_added`, `status`) VALUES ('0', '$txtBook', '$txtcat' , '$txtAuthor', '0', '$txtBp', '$txtPub', '$txtIsbn', '$txtCpr', '$txtDate', '$txtStat')";
+$sql = "INSERT INTO book (`book_id`, `book_title`, `category_id`, `author`, `book_copies`,`book_pub`, `publisher_name`, `isbn`, `copyright`, `date_added`, `status`) VALUES ('0', '$txtBook', '$txtcat' , '$txtAuthor', '1', '$txtBp', '$txtPub', '$txtIsbn', '$txtCpr', '$txtDate', '$txtStat')";
 
 // insert in database 
 
