@@ -49,11 +49,11 @@ if ($conn->query($sql)==TRUE && $conn->affected_rows>0){
     echo "<a href='UpdateMembers.php'><button>Update another member's details</button></a>";
     echo "</html>";
 } else {
-    echo "Member does not exist in DataBase! No records deleted! Please ensure you have entered correct member ID!";
+    echo "Member does not exist in DataBase! No records updated! Please ensure you have entered correct member ID!";
     echo "<html>";
     echo "<br>";
     echo "<a href='Library.php'><button>Return to Home Page</button></a>";
-    echo "<a href='DeleteBooks.php'><button>Update another member's details</button></a>";
+    echo "<a href='UpdateMembers.php'><button>Update another member's details</button></a>";
     echo "</html>";
 }
 
