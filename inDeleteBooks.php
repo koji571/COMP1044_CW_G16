@@ -15,23 +15,25 @@ if ($conn->connect_error) {
 
 $conn =new mysqli($servername, $username,$password,$dbname);
 
-$txtSearch = $_POST["txtSearch"];
-$txtSearch2 = $_POST["txtSearch2"];
+// get the post records
 
-$sql = "DELETE FROM `member` WHERE `firstname`='$txtSearch' AND `lastname`='$txtSearch2'" ;
+$txtBook = $_POST['txtBook'];
+
+// database insert SQL code
+$sql = "DELETE FROM book WHERE book_title='$txtBook'";
 
 //To check if record exists or not
 if ($conn->query($sql)==TRUE && $conn->affected_rows>0){
-    echo "Member Deleted!";
+    echo "Book Deleted!";
     echo "<a href='Library.php'><button>Return to Home Page</button></a>";
-    echo "<a href='DeleteMembers.php'><button>Delete another member</button></a>";
+    echo "<a href='DeleteMembers.php'><button>Delete another book</button></a>";
     echo "</html>";
 } else {
-    echo "Member does not exist in DataBase! No records deleted! Please ensure you have entered exact name of member!";
+    echo "Book does not exist in DataBase! No records deleted! Please ensure you have entered exact book title!";
     echo "<html>";
     echo "<br>";
     echo "<a href='Library.php'><button>Return to Home Page</button></a>";
-    echo "<a href='DeleteMembers.php'><button>Delete another member</button></a>";
+    echo "<a href='DeleteBooks.php'><button>Delete another book</button></a>";
     echo "</html>";
 }
 
