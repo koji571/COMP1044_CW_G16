@@ -152,7 +152,6 @@ span.psw {
 
   <div class="Buttoncenter">
 <button onclick="document.getElementById('id01').style.display='block'" style="width:200px;">Login</button>
-<a href="library.html"><button type="submit">Teleport to Main Menu</button></a>
   </div>
 </div>
 
