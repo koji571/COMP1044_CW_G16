@@ -22,11 +22,17 @@ $sql = "DELETE FROM `member` WHERE `firstname`='$txtSearch' AND `lastname`='$txt
 
 //To check if record exists or not
 if ($conn->query($sql)==TRUE && $conn->affected_rows>0){
-    header("refresh:3;Library.php");
-    echo "Member Deleted! Redirecting to Home Page in 3 seconds...";
+    echo "Member Deleted!";
+    echo "<a href='Library.php'><button>Return to Home Page</button></a>";
+    echo "<a href='DeleteMembers.php'><button>Delete another member</button></a>";
+    echo "</html>";
 } else {
-    header("refresh:3;Library.php");
-    echo "Member does not exist in DataBase! No records deleted! Redirecting to Home Page in 3 seconds...";
+    echo "Member does not exist in DataBase! No records deleted! Please ensure you have entered exact name of member!";
+    echo "<html>";
+    echo "<br>";
+    echo "<a href='Library.php'><button>Return to Home Page</button></a>";
+    echo "<a href='DeleteMembers.php'><button>Delete another member</button></a>";
+    echo "</html>";
 }
 
 
