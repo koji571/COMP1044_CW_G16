@@ -22,7 +22,7 @@
                 <li><a href="SearchBooks.php">SearchBooks</a></li>
                 <li><a href="members.php">AddMembers</a></li>
                 <li><a href="SearchMembers.php">SearchMembers</a></li>
-                <li><a href="BorrowingDetail.php">Borrowing Details</a></li>
+                <li><a href="BorrowingDetails.php">Borrowing Details</a></li>
                 <li><a href="Library.php">Home</a></li>
                 <li><a href="DeleteMembers.php">DeleteMembers</a></li>
                 <li><a href="UpdateMembers.php">UpdateMembers</a></li>
